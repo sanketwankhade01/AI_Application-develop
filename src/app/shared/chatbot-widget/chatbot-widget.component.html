@@ -1,0 +1,93 @@
+<div class="container h-100 chat-container">
+  <div class="chat-header d-flex align-items-center">
+    <div class="online-status me-3">
+        <img src="../../assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
+        <div class="online-dot"></div>
+    </div>
+    <div>
+        <h6 class="mb-0">John Doe</h6>
+        <small class="text-success">Online</small>
+    </div>
+</div>
+
+<!-- Chat Body -->
+<div class="chat-body flex-grow-1"  #msgpage id="msgpage">
+  <ng-container *ngFor="let data of chat_records;let i=index"> 
+    <!-- Received Message -->
+    <div class="message received">
+        <img src="../../assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
+        <div class="message-content">
+            <p class="mb-0">{{data.agent_prompt}}</p>
+            <div class="timestamp">10:00 AM</div>
+        </div>
+    </div>
+
+    <!-- Sent Message -->
+    <div class="message sent" *ngIf="data.bot_prompt.length>0">
+      <img [ngClass]="(currect_search_index != undefined && currect_search_index == i)?'loading-gif':''"  [src]="(currect_search_index!=undefined && currect_search_index == i) ? waiting_texting : bot"  class="user-img rounded-circle" alt="User">
+        <div class="message-content">
+            <p class="mb-0">{{data.bot_prompt}}</p>
+            <div class="timestamp">10:02 AM</div>
+        </div>
+    </div>
+  </ng-container>
+</div>
+
+
+<!-- Chat Footer -->
+<div class="chat-footer">
+    <!-- <div class="input-group">
+        <input type="text" class="form-control" placeholder="Type your message..." id="messageInput"
+        >
+        <button class="btn btn-icon" type="button" id="sendButton">
+            <i class="bi bi-send"></i>
+        </button>
+        <button class="btn btn-icon" type="button" id="uploadButton">
+            <i class="bi bi-upload"></i>
+        </button>
+        <button class="btn btn-icon" type="button" id="audioButton">
+            <i class="bi bi-mic"></i>
+        </button>
+        <button class="btn btn-icon" type="button" id="stopButton">
+            <i class="bi bi-stop-circle"></i>
+        </button>
+    </div> -->
+    <div class="input-group">
+      <input
+      type="text"
+      class="form-control"
+      #res
+      (keyup.enter)="promptInput(res.value)"
+      placeholder="write message..."  
+     (input)="onInputChange($event)"
+      />
+      <span class="input-group-text send-icon" (click)="promptInput(res.value)">
+        <i class="bi bi-send"></i>
+      </span>
+     <span>
+       <span class="input-group-text send-icon" *ngIf="listening$ |async;else mic"(click)="stop()">
+        <i class="bi bi-mic"></i>
+      </span>    
+      <ng-template #mic>
+        <span class="input-group-text send-icon" (click)="start()">
+          <i class="bi bi-mic-mute"></i>
+        </span> 
+      </ng-template>
+
+    </span>
+    <!-- *** CHANGES ***-->
+    <span>
+    <span class="input-group-text send-icon" *ngIf="speaking" (click)="speakStop()">
+     <i class="bi bi-volume-up"></i>
+   </span> 
+     <span class="input-group-text send-icon" *ngIf="!speaking" (click)="speakText(res.value)">
+       <i class="bi bi-volume-mute"></i>
+     </span> 
+   </span> 
+      <!-- <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;" -->
+
+    </div>
+</div>
+</div>
+
+

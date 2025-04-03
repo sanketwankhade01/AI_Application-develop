@@ -1,0 +1,75 @@
+.accordion-header {
+    button {
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        font-size: 22px;
+    }
+}
+
+.agentic-ai-card {
+    margin-bottom: 30px;
+
+    .accordion-header {
+        button {
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: cursive;
+        }
+    }
+
+    .card {
+        border-radius: 15px;
+        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .badge {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .card-img-top {
+        height: 200px;
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+
+        img {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-content: start;
+            align-items: start;
+        }
+
+        .card-title {
+            position: absolute;
+            bottom: 0px;
+            left: 210px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            font-size: 22px;
+        }
+
+        .tech-lable {
+            position: absolute;
+            bottom: 65px;
+            left: 206px;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            align-content: start;
+            font-size: 13px;
+        }
+    }
+}

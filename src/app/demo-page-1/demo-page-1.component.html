@@ -1,0 +1,50 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mb-4 d-flex">
+            <div class="card h-100 w-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Container 1</h5>
+                    <p class="card-text flex-grow-1">
+                    </p>
+                    <div class="mt-auto">
+                        <label for="fileInput1" class="form-label">Upload File</label>
+                        <input class="form-control" type="file" id="fileInput1" (change)="onFileSelected($event, 1)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4 d-flex">
+            <div class="card h-100 w-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Container 2</h5>
+                    <p class="card-text flex-grow-1">
+                    </p>
+                    <div class="mt-auto">
+                        <label for="fileInput2" class="form-label">Upload File</label>
+                        <input class="form-control" type="file" id="fileInput2" (change)="onFileSelected($event, 2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <button class="btn btn-primary" (click)="onGenerate()">Generate</button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Comparison Result</h5>
+                    <p class="card-text" *ngIf="comparisonResult">
+                        {{ comparisonResult }}
+                    </p>
+                    <p class="card-text" *ngIf="!comparisonResult">
+                        No comparison result available.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

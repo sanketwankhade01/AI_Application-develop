@@ -1,0 +1,466 @@
+.msg-header {
+    background-color: #2f06c1;
+    color: #fff;
+    
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .container1 {
+    height: auto;
+    width: 270px;
+   float: left;
+   
+  }
+
+  .container {   
+    width: 30%;
+    height: 80%;       
+    margin-top: 5rem;
+    letter-spacing: 0.5px;
+    margin-left: auto; 
+    margin-right: 2rem;
+   
+  }
+  
+  /* header image  */
+  .msgimg
+  {
+     margin-top: 0.5rem;
+    margin-left:10%;
+    float:left;
+    width: 10%;
+    height: 10%; 
+  }
+
+  .msgimg1
+  {
+    margin-left:10%;
+    float:left;
+    width: 10%;
+    height: 10%; 
+  }
+  .active
+  {
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 0 100px;
+    float: left;
+  }
+
+  /* for header title */
+  .chat-head
+  {
+    color: rgb(240, 233, 233);
+    font-size: 14px; 
+    top: 5%;
+    margin-left:70%;   
+
+  }
+
+  /* for header adjust */
+  .chat-page
+  {
+    padding: 0 0 0px 0;
+    position: relative;
+    top: -45px;
+   
+    
+  }
+  .msg-page
+  {
+    max-height: 360px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .msg-inbox
+  {
+    border:1px solid #ccc;
+    /* overflow: hidden; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .chats
+  {
+    padding: 45px 15px 0 25px;
+    height: 400px;
+    
+    
+  }
+  
+  .received-chats-img
+  {
+    display: inline-block;
+    width: 40px;
+    
+  }
+
+  /* correct one for received message */
+  .received-msg-inbox p {
+    background: #ddd non repeat scroll 0 0;
+    border-radius: 10px;
+    color: #646464;
+    font-size: 14px;
+    margin-left: 5rem;
+    padding: 1rem;
+    width:80% ;
+    box-shadow: rgb(0 0 0/25%) 0px 5px 5px 2px;
+  }
+
+  p {
+    overflow-wrap: break-word;
+  }
+.received-msg
+{
+display: inline-block;
+padding: 0 0 0 10px;
+vertical-align: top;
+width:92%
+}
+
+
+.outgoing-chats-img{
+  display: inline-block;
+  width: 20px;
+/*  float: right;*/
+  margin-right: 1rem;
+}
+.outgoing-chats
+{
+    overflow: hidden;
+    margin:26px 20px;
+}
+.outgoing-chats-msg p{
+
+    background-color: #2f06c1;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 80%;
+    padding: 1rem;
+    box-shadow: black (0 0 0/25%) 0px 2px 5px 2px;
+}
+
+/*.outgoing-msg
+{
+    color: #1fe340; 
+}
+*/
+.msg-bottom
+{
+    border-top: 1px solid #ccc;
+    position: relative;
+    height: 11%;
+    background-color: hwb(0 87% 11%);
+    padding: 5px;;
+}
+.input-group
+{
+    outline: none!important;
+    border-radius: 20px;
+    // width: 88% !important;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.input-group>.form-control{
+  
+    position:relative;
+    flex:1 1 auto;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.form-control{
+   border: none!important;
+//  border-radius: 20px!important;
+  display: block;
+ // height:calc(2.25rem + 2px) ;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: darkslategrey;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition:border-colour .15s ease-in-out,box-shadow .15s ease-in-out; 
+
+}
+
+.input-group-text{
+    background: transparent!important;
+    border: none!important;
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: b;
+    line-height: 1.5;
+    color: #646464;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ccc;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    font-weight: bold!important;
+    cursor: pointer;
+}
+.box
+{
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+}
+
+/* Change the background color of the tab headers */
+.custom-tab-group .mat-tab-label {
+    background-color: #6200ea; /* Your desired color */
+    color: white; /* Text color */
+}
+
+/* Change the background color of the selected tab */
+.custom-tab-group .mat-tab-label-active {
+    background-color: #3700b3; /* Your desired color for the active tab */
+    color: white;
+}
+
+/* Change the background color of the tab content */
+.custom-tab-group .mat-tab-body {
+    background-color: #eeeeee; /* Your desired color for the tab content */
+    color: black;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+/*  */
+
+.container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+}
+
+.chat-container {
+  max-width: 800px;
+  min-height: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.chat-header, .email-header {
+  padding: 15px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-body, .email-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #fff;
+}
+
+.chat-footer{
+  padding: 15px;
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+  .input-group{
+      border: var(--bs-border-width) solid #d1d6da;
+      border-radius: 7px 20px 20px 7px;
+  }
+
+  .form-control{
+      border: none;
+      border-radius: none;
+  }
+}
+.email-footer {
+  padding: 15px;
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.message.sent {
+  flex-direction: row-reverse;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+.received .message-content {
+  background: #f1f0f0;
+}
+
+.sent .message-content {
+  background: #007bff;
+  color: white;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.online-status {
+  position: relative;
+}
+
+.online-dot {
+  width: 12px;
+  height: 12px;
+  background: #28a745;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.email-composer {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  //min-height: 100vh;
+
+  .form-label {
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 0.5rem;
+  }
+
+  .file-upload-area {
+      border: 2px dashed #dee2e6;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      transition: border-color 0.3s ease;
+
+      &:hover {
+          border-color: #0d6efd;
+      }
+
+      .attachment-list {
+          font-size: 0.875rem;
+          color: #6c757d;
+      }
+  }
+
+  .send-btn {
+      padding: 0.5rem 1.5rem;
+      font-weight: 500;
+      transition: transform 0.2s ease;
+
+      &:hover {
+          transform: translateY(-1px);
+      }
+  }
+
+  .form-control {
+      &:focus {
+          box-shadow: none;
+          border-color: #86b7fe;
+      }
+  }
+}
+
+.row.d-flex {
+  display: flex;
+//  height: 100vh; // Ensure the row takes the full height of the viewport
+}
+
+.col-md-6.d-flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.email-composer, .chat-container {
+  flex-grow: 1;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.btn-icon {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon i {
+  font-size: 1.25rem;
+  color: #007bff; /* Change this color as needed */
+}
+
+.btn-icon:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}

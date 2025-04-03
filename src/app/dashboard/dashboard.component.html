@@ -1,0 +1,52 @@
+<div class="row d-flex">
+    <div class="col-md-6 d-flex flex-column flex-fill">
+        <div class="container h-100 email-container">
+            <!-- Email Header -->
+            <div class="email-header d-flex align-items-center">
+                <h6 class="mb-0">Compose Email</h6>
+            </div>
+
+            <!-- Email Body -->
+            <div class="email-body flex-grow-1">
+                <!-- To Section -->
+                <div class="form-group mb-4">
+                    <label for="toInput" class="form-label">To</label>
+                    <input type="email" class="form-control" id="toInput" placeholder="Recipient email">
+                </div>
+
+                <!-- Message Section -->
+                <div class="form-group mb-4">
+                    <label for="emailBody" class="form-label">Message</label>
+                    <textarea class="form-control" id="emailBody" rows="8" placeholder="Compose your message"></textarea>
+                </div>
+
+                <!-- Attachment Section -->
+                <div class="form-group mb-4">
+                    <label class="form-label">Attachments</label>
+                    <div class="file-upload-area">
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="fileInput" multiple>
+                            <label class="input-group-text btn btn-outline-secondary" for="fileInput">
+                                <i class="bi bi-paperclip me-2"></i>Attach Files
+                            </label>
+                        </div>
+                        <div class="attachment-list mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Footer -->
+            <div class="email-footer d-flex justify-content-end">
+                <button class="btn btn-primary send-btn">
+                    <i class="bi bi-send me-2"></i>Send
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column flex-fill">
+        
+            <app-chatbot-widget></app-chatbot-widget>
+            <!-- Chat Header -->
+            
+    </div>
+</div>

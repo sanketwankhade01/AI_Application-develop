@@ -1,0 +1,120 @@
+.banking-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.demos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.demo {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo:hover {
+    background-color: #e2e6ea;
+}
+
+// @import 'src/styles/variables';
+
+.rob-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.rob-header {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.rob-description {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.skills-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  color: #34495e;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.skill-card {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498db;
+  
+  &.upcoming {
+    border-left-color: #bdc3c7;
+    opacity: 0.9;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+}
+
+.skill-title {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.skill-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+}
+

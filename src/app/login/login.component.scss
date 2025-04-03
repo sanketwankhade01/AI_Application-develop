@@ -1,0 +1,152 @@
+$primary-color: #7A52D7;
+$secondary-color: #f8f9fa;
+$text-color: #ffffff;
+
+.login-container {
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 15%) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-panel {
+  background: url('../../assets/images/login.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+
+.justify-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 2rem !important;
+    border-top-left-radius: 2rem !important
+}
+
+.round-image{
+    border-bottom-left-radius: 2rem !important;
+    border-top-left-radius: 2rem !important
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+}
+
+.form-panel {
+  padding: 2rem;
+  
+  h3 {
+   // color: $text-color;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .login-text{
+    font-size: 1.2rem;
+  }
+  
+  .form-group {
+    label {
+      font-weight: 500;
+    }
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 2px solid #edeaea;
+    background-color: #f9f5f5;
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: none;
+    }
+  }
+  
+  .btn-primary {
+  //  background-color: hotpink;
+    //border-color: hotpink;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  }
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.card {
+  width: 55%;
+  border: none;
+  border-radius: 2rem; /* Increased border radius for more rounded corners */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+  height: auto;
+  justify-content: center;
+  align-items: center;
+ // background-color: $primary-color;
+  //color: white;
+//   height: 68vh;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.text-center a {
+  color: $text-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+$base-color: #2c3e50;
+
+.image-overlay {
+  background: 
+    linear-gradient(
+      to bottom,
+      transparentize($base-color, 0.3),
+      transparentize(adjust-hue($base-color, 10deg), 0.7)
+    ),
+    url('../../assets/images/login.png');
+}
