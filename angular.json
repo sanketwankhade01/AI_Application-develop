@@ -20,7 +20,7 @@
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref":"",
+            "baseHref":"/AI_Application-develop/",
             "polyfills": [
               "zone.js"
             ],
