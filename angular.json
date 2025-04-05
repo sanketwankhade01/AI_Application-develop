@@ -17,10 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "docs/ai-application",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref":"/ai-application/",
+            "baseHref":"",
             "polyfills": [
               "zone.js"
             ],
