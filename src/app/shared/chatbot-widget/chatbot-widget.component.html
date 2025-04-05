@@ -1,7 +1,7 @@
 <div class="container h-100 chat-container">
   <div class="chat-header d-flex align-items-center">
     <div class="online-status me-3">
-        <img src="../../assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
+        <img src="assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
         <div class="online-dot"></div>
     </div>
     <div>
@@ -15,7 +15,7 @@
   <ng-container *ngFor="let data of chat_records;let i=index"> 
     <!-- Received Message -->
     <div class="message received">
-        <img src="../../assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
+        <img src="assets/images/hospitality-agent.png" class="user-img rounded-circle" alt="User">
         <div class="message-content">
             <p class="mb-0">{{data.agent_prompt}}</p>
             <div class="timestamp">10:00 AM</div>

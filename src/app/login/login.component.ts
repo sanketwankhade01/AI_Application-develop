@@ -31,7 +31,7 @@ export class LoginComponent {
 
   async verifyCredentials(username: string, password: string): Promise<boolean> {
     try {
-      const url = '../../assets/data/credentials.xlsx';
+      const url = 'assets/data/credentials.xlsx';
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error('Failed to fetch the Excel file');
